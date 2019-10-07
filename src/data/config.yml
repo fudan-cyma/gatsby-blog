@@ -1,0 +1,36 @@
+name: Ptilo
+
+social:
+  tags:
+    url: /tags
+    icon: fas fa-tags
+  about:
+    url: /about
+    icon: fas fa-user-alt
+  github:
+    url: https://github.com/fudan-cyma
+    icon: fab fa-github
+  email:
+    url: cyma95@outlook.com
+    icon: fas fa-envelope
+  rss:
+    url: https://www.linkedin.com/in/chengyaoma/
+    icon: fab fa-linkedin
+
+# page
+page:
+  size: 5
+
+# crate page config
+createPageConfig:
+  activeLayout: posts # or 'sample'
+  posts: # blog posts layout, this is default layout
+    homePath: /posts/page/1 # map to '/', if need add index.tsx file, you can set the value to '/'
+    list: posts-list.tsx
+    listPath: /posts/page/:page
+    detail: posts-detail.tsx
+    detailPath: /posts/:date/:title
+    tag: posts-tag.tsx
+    tagPath: /tags/:tag
+  sample:
+    list: sample-list.tsx
